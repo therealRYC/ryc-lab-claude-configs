@@ -38,6 +38,6 @@ $0/
 - Create a minimal src/__init__.py and src/pipeline.py with docstrings
 - If Python: include pyproject.toml with project metadata
 - Add type hints and Google-style docstrings throughout
-- Follow Robert's file timestamp convention (Created + Last updated lines)
+- Follow the file timestamp convention (Created + Last updated lines)
 
 Confirm the structure with me before creating files.

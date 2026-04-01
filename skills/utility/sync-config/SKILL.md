@@ -10,13 +10,13 @@ argument-hint: "[setup | push | pull | diff | status]"
 
 # Sync Config
 
-Synchronize Claude Code global configuration across machines using `therealRYC/claude-config` as transport.
+Synchronize Claude Code global configuration across machines using `[YOUR-GITHUB-HANDLE]/claude-config` as transport.
 
 **Argument**: $ARGUMENTS
 
 ## Constants
 
-- **Repo**: `therealRYC/claude-config`
+- **Repo**: `[YOUR-GITHUB-HANDLE]/claude-config`
 - **Local clone**: `~/.claude-config-repo`
 - **Sync marker**: `~/.claude/.sync-config`
 ### File Inventory
@@ -92,12 +92,12 @@ Initialize the sync infrastructure.
 
 2. **Check if repo exists**:
    ```bash
-   gh repo view therealRYC/claude-config --json name 2>&1
+   gh repo view [YOUR-GITHUB-HANDLE]/claude-config --json name 2>&1
    ```
 
 3. **If repo doesn't exist, create it**:
    ```bash
-   gh repo create therealRYC/claude-config --private --description "Claude Code configuration sync"
+   gh repo create [YOUR-GITHUB-HANDLE]/claude-config --private --description "Claude Code configuration sync"
    ```
 
 4. **Clone or update local clone**:
@@ -105,7 +105,7 @@ Initialize the sync infrastructure.
    if [ -d ~/.claude-config-repo/.git ]; then
      git -C ~/.claude-config-repo pull --rebase 2>/dev/null || true
    else
-     gh repo clone therealRYC/claude-config ~/.claude-config-repo
+     gh repo clone [YOUR-GITHUB-HANDLE]/claude-config ~/.claude-config-repo
    fi
    ```
 
@@ -116,12 +116,12 @@ Initialize the sync infrastructure.
 
 6. **Write sync marker**:
    ```bash
-   printf 'repo=therealRYC/claude-config\nclone=%s/.claude-config-repo\nsetup_date=%s\nsetup_host=%s\n' \
+   printf 'repo=[YOUR-GITHUB-HANDLE]/claude-config\nclone=%s/.claude-config-repo\nsetup_date=%s\nsetup_host=%s\n' \
      "$HOME" "$(date -Iseconds)" "$(hostname)" > ~/.claude/.sync-config
    ```
 
 7. **Report**:
-   > Setup complete. Repo: `therealRYC/claude-config`. Clone: `~/.claude-config-repo`
+   > Setup complete. Repo: `[YOUR-GITHUB-HANDLE]/claude-config`. Clone: `~/.claude-config-repo`
    > Run `/sync-config push` to export your current config.
 
 ## Subcommand: push
@@ -286,7 +286,7 @@ Run this as `python3 -c '...'` or write to a temp file and execute.
 Write `~/.claude-config-repo/README.md` with:
 - Title: `# Claude Code Configuration`
 - Description: Private config sync for Claude Code across WSL2 machines
-- Bootstrap instructions: `gh repo clone therealRYC/claude-config /tmp/cc && /tmp/cc/bootstrap.sh`
+- Bootstrap instructions: `gh repo clone [YOUR-GITHUB-HANDLE]/claude-config /tmp/cc && /tmp/cc/bootstrap.sh`
 - File inventory summary (count agents, hooks, skills, commands)
 - Last sync timestamp and hostname (from manifest)
 - Enabled plugins list
@@ -313,7 +313,7 @@ Show summary:
 - Files synced (count by category: N agents, N hooks, N skills, N commands)
 - New or removed files since last push
 - Commit SHA
-- "Config pushed to `therealRYC/claude-config`"
+- "Config pushed to `[YOUR-GITHUB-HANDLE]/claude-config`"
 
 ## Subcommand: pull
 
@@ -576,7 +576,7 @@ Show summary:
 - Files updated (count by category)
 - Any conflicts resolved and how
 - Missing plugins (with install commands if any)
-- "Config pulled from `therealRYC/claude-config`"
+- "Config pulled from `[YOUR-GITHUB-HANDLE]/claude-config`"
 
 ## Subcommand: diff
 
@@ -671,7 +671,7 @@ done
 ```
 ## Sync Status
 
-Repo: therealRYC/claude-config
+Repo: [YOUR-GITHUB-HANDLE]/claude-config
 Clone: ~/.claude-config-repo
 Last sync: <from last commit timestamp>
 Local changes: ~N files modified since last push

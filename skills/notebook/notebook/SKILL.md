@@ -24,7 +24,7 @@ Append a new entry to `NOTEBOOK.md` in the project root.
    - No prefix or plain topic → General session entry
    - If ambiguous, infer from conversation context. Most entries are general.
 3. **Get timestamp**: `date '+%Y-%m-%d %H:%M'` — entries always get date AND time.
-4. **Collect recent commits** from this session: `git log --oneline --since="4 hours ago" --author="Robert" 2>/dev/null | head -10` (adjust timeframe if needed). These go in the Related Commits section.
+4. **Collect recent commits** from this session: `git log --oneline --since="4 hours ago" --author="$(git config user.name)" 2>/dev/null | head -10` (adjust timeframe if needed). These go in the Related Commits section.
 
 ## Entry Format
 

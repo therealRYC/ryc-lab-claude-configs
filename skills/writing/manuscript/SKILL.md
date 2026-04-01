@@ -2,14 +2,14 @@
 
 ---
 name: manuscript
-description: "Draft journal manuscripts in Robert Chen's voice — full workflow covering IMRAD drafts, cover letters, and response to reviewers. Supports empirical research, reviews, brief reports."
+description: "Draft journal manuscripts — full workflow covering IMRAD drafts, cover letters, and response to reviewers. Supports empirical research, reviews, brief reports. Customize the voice profile below with your own background."
 user-invocable: true
 argument-hint: "[manuscript name | cover-letter | response | resume]"
 ---
 
-# Manuscript Writing — Robert Chen
+# Manuscript Writing
 
-Draft journal manuscripts following academic writing conventions in Robert Chen's voice.
+Draft journal manuscripts following academic writing conventions.
 
 **Arguments**: $ARGUMENTS
 
@@ -21,11 +21,11 @@ Draft journal manuscripts following academic writing conventions in Robert Chen'
 
 ### Identity & Positioning
 
-Robert is a Psychiatry resident (PGY-3 at University of Washington) with a PhD in functional genomics. He writes at the intersection of psychiatry, functional genomics, drug development, and neuroscience. His unique angle: both bench scientist and bedside clinician.
+[YOUR IDENTITY: Replace this with your background, research focus, and unique angle. Example: "A computational biologist at UW studying protein fitness landscapes. Writes at the intersection of deep mutational scanning, machine learning, and protein engineering."]
 
 ### Core Tone
 
-Robert's voice is **rigorous enthusiasm** — but manuscript mode shifts the expression dramatically:
+The voice is **rigorous enthusiasm** — but manuscript mode shifts the expression dramatically:
 - 20% understated enthusiasm / 80% disciplined precision
 - More conversational than a dry academic paper, more rigorous than a blog post
 
@@ -48,10 +48,10 @@ Robert's voice is **rigorous enthusiasm** — but manuscript mode shifts the exp
 |---------------------|---------------------|----------------------|
 | Rigorous enthusiasm | "Mind-blowing" / "Absolutely wild" | "These findings suggest a fundamental reassessment of..." / "Notably, these results challenge..." |
 | Accessible authority | Analogies, parentheticals | Precise definitions, in-text citations, structured logic |
-| First-person stakes | "As a Psychiatrist in Seattle..." | "In clinical practice, these findings may inform..." |
+| First-person stakes | "As a [your role] in [your city]..." | "In practice, these findings may inform..." |
 | Intellectual humility | "And... I was wrong." | "These results should be interpreted in light of several limitations..." |
 | The Big BUT | "BUT -- and it's a big BUT" | "However, several considerations temper these conclusions." |
-| Contrarian curiosity | "'Benzos are bad' = dogma" | "Although [drug class] has been historically characterized as [X], recent evidence suggests..." |
+| Contrarian curiosity | "'X is always bad' = dogma" | "Although [approach/method] has been historically characterized as [X], recent evidence suggests..." |
 
 ### Voice Rules
 
@@ -119,7 +119,7 @@ Robert's voice is **rigorous enthusiasm** — but manuscript mode shifts the exp
 - Key question: "After this is published, physicians should do X differently"
 
 **JAMA Psychiatry / Lancet Psychiatry**
-- Best fit for Robert's work: pharmacogenomics with clinical outcomes, computational psychiatry
+- Best fit for your work: pharmacogenomics with clinical outcomes, [your research area]
 - Lancet Psychiatry: write for "a reasonably well-read, general psychiatrist" — define computational/genomic terms
 
 ### Rhetorical Strategies by Paper Type
@@ -250,7 +250,7 @@ Dear [Editor Name],
 [Suggest 3-4 reviewers with rationale. Exclude conflicted reviewers with reasoning.]
 
 Warmly,
-Robert Y. Chen
+[Your Name]
 ```
 
 **Cover Letter Principles:**
@@ -316,21 +316,21 @@ In the revised manuscript, this appears on page X, lines Y-Z.
 
 ### Phase 1: Interview
 
-Ask Robert:
+Ask the user:
 - What's the paper about? (one sentence summary of the finding)
 - What type of manuscript? (empirical research, review, brief report, letter)
 - What data/analyses are complete? What's still in progress?
 - Is there an existing draft, or starting from scratch?
-- Who are the co-authors and what's Robert's role?
+- Who are the co-authors and what's your role?
 - What gap does this fill?
 - What's the "so what" — why should a clinician or scientist change what they do?
 - What are the biggest limitations you're already aware of?
 
 ### Phase 2: Target Journal
 
-**If Robert has a target journal:** Look up scope, word limits, figure limits, abstract format, and reporting requirements. Assess fit. Check voice adjustments (see Journal-Specific Expectations above).
+**If the user has a target journal:** Look up scope, word limits, figure limits, abstract format, and reporting requirements. Assess fit. Check voice adjustments (see Journal-Specific Expectations above).
 
-**If Robert needs help choosing:**
+**If the user needs help choosing:**
 
 | Tier | Journal | Best for |
 |------|---------|----------|
@@ -380,7 +380,7 @@ Recommend: Primary target (aim high), Secondary (realistic), Tertiary (reliable)
 - Table 1: [description]
 ```
 
-Present outline for Robert's approval.
+Present outline for the user's approval.
 
 ### Phase 4: Draft
 
@@ -425,7 +425,7 @@ Save to `$CWD/YYMMDD_Name/response_to_reviewers.md`
 
 ### Phase 7: Review & Iterate
 
-Ask Robert:
+Ask the user:
 - "Does the draft capture the right level of formality for [target journal]?"
 - "Any sections that feel over-claimed or under-claimed?"
 - "Are the limitations fair and complete?"

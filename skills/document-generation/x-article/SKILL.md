@@ -2,14 +2,14 @@
 
 ---
 name: x-article
-description: "Draft X Articles in @therealRYC's voice — full workflow with interview, research, outline, draft, and promotional content. Shortcut for /write x-article."
+description: "Draft X Articles — full workflow with interview, research, outline, draft, and promotional content. Shortcut for /write x-article. Customize the voice profile below with your own background."
 user-invocable: true
 argument-hint: "[topic | resume | outline | draft | promo]"
 ---
 
-# X Article — @therealRYC
+# X Article
 
-Draft an X Article in Robert Chen's voice following the full Phase 0–7 pipeline.
+Draft an X Article following the full Phase 0-7 pipeline.
 
 **Arguments**: $ARGUMENTS
 
@@ -21,30 +21,30 @@ Draft an X Article in Robert Chen's voice following the full Phase 0–7 pipelin
 
 ### Identity & Positioning
 
-Robert is a Psychiatry resident (PGY-3 at University of Washington) with a PhD in functional genomics. He writes at the intersection of:
+[YOUR IDENTITY: Replace with your background and research focus.] Example research intersections:
 
-- **Psychiatry** (clinical practice, psychopharmacology, diagnostic nosology)
-- **Functional Genomics & Genetics** (GWAS, CRISPR, iPSCs, non-coding genome)
-- **Drug Development & Biotech** (clinical trials, FDA, VC, platform technologies)
-- **Neuroscience** (circuits, neuroimaging, neuroplasticity)
+- [Your primary research domain]
+- [Your secondary domain / methodological expertise]
+- [Cross-disciplinary interests]
+- [Any clinical or translational angles]
 
 His unique angle: he is both a **bench scientist** and a **bedside clinician**. He can explain a CRISPR mechanism AND what it feels like to sit across from a patient in psychosis. This duality is central to his voice. He is not a detached commentator — he is an active participant in the fields he writes about.
 
 ### Core Tone: Rigorous Enthusiasm
 
-Robert's voice lives in a specific zone: **excited but honest**. He gets genuinely thrilled about new science ("I am unbelievably excited," "mind-blowing," "the stuff of science fiction") but always pulls back to acknowledge limitations ("But it's nuanced," "Big BUT," "Cautiously optimistic"). This **build excitement, then temper it** pattern is his signature rhythm.
+The author's voice lives in a specific zone: **excited but honest**. He gets genuinely thrilled about new science ("I am unbelievably excited," "mind-blowing," "the stuff of science fiction") but always pulls back to acknowledge limitations ("But it's nuanced," "Big BUT," "Cautiously optimistic"). This **build excitement, then temper it** pattern is his signature rhythm.
 
 **Key Voice Attributes**
 
 | Attribute | Description | Example |
 |-----------|-------------|---------|
 | **Accessible authority** | Explains like a knowledgeable friend, not a professor | "ASOs are strings of nucleotides, kind of like DNA or RNA, but with modified chemistry" |
-| **First-person stakes** | Regularly inserts clinical experience | "As a Psychiatrist in Seattle, I'm constantly shocked how often I see CIB" |
+| **First-person stakes** | Regularly inserts professional experience | "As a [your role] in [your city], I see [observation] all the time" |
 | **Intellectual humility** | Openly admits uncertainty and mistakes | "And... I was wrong. GLP-1RA did no better than placebo. Predictions are hard." |
-| **Bridge-builder** | Connects disparate fields into unified narratives | Links RNU4-2 genetics to long-read sequencing to AI to the future of psychiatry |
-| **Contrarian curiosity** | Challenges dogma but from evidence, not ideology | "'Benzos are bad' = dogma" followed by data showing discontinuation risk |
+| **Bridge-builder** | Connects disparate fields into unified narratives | Links genetics to sequencing technology to AI to the future of the field |
+| **Contrarian curiosity** | Challenges dogma but from evidence, not ideology | "'X is always bad' = dogma" followed by data showing nuance |
 
-**What Robert is NOT**
+**What The author is NOT**
 
 - Not snarky or dismissive
 - Not dry/academic — he avoids passive voice and jargon-heavy prose
@@ -63,7 +63,7 @@ Robert's voice lives in a specific zone: **excited but honest**. He gets genuine
 
 **Active Voice**: Subjects do things. Researchers "published," "showed," "discovered" — not "it was found."
 
-**Rhetorical Questions**: Robert poses questions the reader is already wondering, then answers them.
+**Rhetorical Questions**: The author poses questions the reader is already wondering, then answers them.
 
 **Analogies & Metaphors**: Vivid, accessible, concrete:
 - EDVs: "like a cargo ship navigating to port"
@@ -80,7 +80,7 @@ Robert's voice lives in a specific zone: **excited but honest**. He gets genuine
 
 **Low:** "I'm speculating. The brain is complicated and recursive." / "And... I was wrong."
 
-**The "Big BUT" pattern** — Robert's most distinctive caveat structure:
+**The "Big BUT" pattern** — The author's most distinctive caveat structure:
 > "BUT / and it's a big BUT / [caveat follows]"
 
 He genuinely finds caveats as interesting as findings.
@@ -93,7 +93,7 @@ He genuinely finds caveats as interesting as findings.
 
 **Caveats**: "BUT -- and it's a big BUT" / "But it's nuanced." / "Cautiously optimistic" / "Predictions are hard." / "The reality is..."
 
-**Authority**: "As a Psychiatrist in Seattle..." / "In my clinic..." / "Here's what you need to know about..."
+**Authority**: "As a [your role] in [your city]..." / "In my lab/clinic..." / "Here's what you need to know about..."
 
 ### Universal Writing Rules
 
@@ -132,7 +132,7 @@ He genuinely finds caveats as interesting as findings.
 
 **Opening Hooks**
 
-- **Pattern 1: The Weekly Roundup Opener** — "Notes to self on what I read this week in Biotech, Venture Capital, Psychiatry, Functional Genomics, CRISPR, and Drug Development." — Casual, first-person, ritualistic — a brand signature.
+- **Pattern 1: The Weekly Roundup Opener** — "Notes to self on what I read this week in [your fields]." — Casual, first-person, ritualistic — a brand signature.
 - **Pattern 2: The Context-Setting Explainer** — Open with background establishing WHY the topic matters before the new finding. Often 2-5 paragraphs before the paper is even mentioned.
 - **Pattern 3: The Provocative Statement** — Bold, counterintuitive, or emotionally resonant claim that creates immediate tension.
 - **Pattern 4: The Statistic Shock** — Lead with a striking number that reframes understanding: "In 2021, 52.5 million people in the United States reported cannabis use. That's one in every 6 people."
@@ -176,7 +176,7 @@ He genuinely finds caveats as interesting as findings.
 
 ### Data Presentation in Articles
 
-Robert never buries data. He presents specific numbers prominently:
+The author never buries data. He presents specific numbers prominently:
 - Percentages and relative risk: "58% reduction," "↓50%," "3x efficacy"
 - Effect sizes: "Cohen's d: 0.82 (large, comparable to psilocybin trials)"
 - NNT: "NNT=3"
@@ -188,7 +188,7 @@ Robert never buries data. He presents specific numbers prominently:
 - **Context before finding**: Never start with the paper — start with WHY it matters
 - **@ tag WHO did the work** — researchers, labs, journals, and companies
 - **Hashtags are optional** — only in roundup articles as section topic tags
-- **Headers must be specific**: Not "Discussion" but "The compelling future of studying Psychiatry in a dish"
+- **Headers must be specific**: Not "Discussion" but "The compelling future of [specific scientific angle]"
 - **End with one of the closing patterns**
 - **Every article needs the "Big BUT"** — caveats are not optional
 
@@ -231,9 +231,9 @@ Notes to self on what I read this week in [list of fields].
 > ## Training Psychiatrist-Scientists--Excellence on Both Sides of the Hyphen
 >
 > Jacob Taylor, @jpotash1 @JAMAPsych
-> #Psychiatry
+> #[YourField]
 >
-> At the start of residency, 49% of Psychiatry residents were interested in research. By the end, only 19% were still interested.
+> [Replace with a compelling statistic or observation from your field that hooks the reader.]
 
 ---
 
@@ -332,7 +332,7 @@ Notes to self on what I read this week in [list of fields].
 [Universal experience or bold claim. Short sentences. Dramatic rhythm.]
 
 [PERSONAL STAKES — 1-2 paragraphs]
-["I'm a Psychiatry resident at..." or "In my clinic..."]
+["I'm a [your role] at..." or "In my [lab/clinic/work]..."]
 
 ## [Concept 1]
 [Explain concept. Ground in evidence. Give actionable insight.]
@@ -348,7 +348,7 @@ Notes to self on what I read this week in [list of fields].
 ```
 
 **Key Patterns:**
-- No paper to anchor to — driven by Robert's synthesis and personal experience
+- No paper to anchor to — driven by The author's synthesis and personal experience
 - More first-person: "I", "my patients", "in my experience"
 - Shorter paragraphs — often 1-3 sentences, almost prose poetry in the opening
 - Headers are conceptual, not paper-title-based
@@ -405,7 +405,7 @@ Notes to self on what I read this week in [list of fields].
 ### High-Engagement Tweet Formula
 
 The most engaged tweets (2,000+ engagement) share:
-1. **Start with 🚨** — Robert's signature alert emoji
+1. **Start with 🚨** — The author's signature alert emoji
 2. **Bold declarative statement** in the first line
 3. **Quantified impact** early
 4. **One-word or short dramatic line**: "This isn't hype." / "It's field-changing."
@@ -446,12 +446,12 @@ Each thread tweet is self-contained but flows as a narrative.
 
 ### Engagement-Driving Topics (ranked by consistent engagement)
 
-1. Clinical psychiatry findings that challenge dogma (antipsychotic discontinuation, ketamine, benzos)
-2. GLP-1 / semaglutide effects on mental health (consistently viral)
-3. Genetics of psychiatric disorders (ADHD genes, autism/paternal age, ApoE)
-4. Cannabis and psychosis
-5. Antidepressant nuance (SSRI mechanism, withdrawal, pregnancy safety)
-6. Neuroscience breakthroughs (psilocybin imaging, sleep/brain fog, dopamine neurons)
+1. Findings that challenge dogma in your field
+2. Cross-domain discoveries with broad public interest
+3. Genetics and genomics breakthroughs
+4. Surprising results that contradict conventional wisdom
+5. Translational science (bench-to-bedside or lab-to-application stories)
+6. New technology enabling previously impossible experiments
 
 ---
 
@@ -488,16 +488,16 @@ Each thread tweet is self-contained but flows as a narrative.
 
 ### Phase 1: Topic Discovery
 
-If no topic was provided, help Robert choose one:
+If no topic was provided, help The author choose one:
 
-1. **Check if `research/topic_ideas.md` exists** in the project folder. If it does, summarize the top 5 Tier 1 topics and ask if any appeal, or if Robert has something else in mind.
+1. **Check if `research/topic_ideas.md` exists** in the project folder. If it does, summarize the top 5 Tier 1 topics and ask if any appeal, or if The author has something else in mind.
 
-2. **If Robert has a vague idea**, help sharpen it:
+2. **If The author has a vague idea**, help sharpen it:
    - What's the core finding or argument?
    - What's the news hook or reason to publish NOW?
    - Who's the audience — psychiatrists, biotech investors, general public, patients?
 
-3. **Check Zotero data** — Check `~/.claude/writing/data_reference.md` for the path to Robert's Zotero data. If the data is accessible, search for relevant papers. If not, skip silently.
+3. **Check Zotero data** — Check `~/.claude/writing/data_reference.md` for the path to The author's Zotero data. If the data is accessible, search for relevant papers. If not, skip silently.
 
 Move to Phase 2 once a topic direction is established.
 
@@ -505,7 +505,7 @@ Move to Phase 2 once a topic direction is established.
 
 ### Phase 2: Interview (Supportive → Challenging)
 
-This is the most important phase. The goal is to find Robert's ANGLE — not just the topic, but his specific take on it.
+This is the most important phase. The goal is to find The author's ANGLE — not just the topic, but his specific take on it.
 
 **Context Check (MANDATORY — always do this before Round 1)**
 
@@ -522,7 +522,7 @@ Before asking any angle questions, ask about reference materials. This step is N
 >
 > If you don't have anything yet, that's fine — I'll do the research. But if you've already been thinking about this, your starting materials will make the article much stronger."
 
-Read any provided materials before proceeding to Round 1. This context shapes the entire interview — papers Robert has already read reveal his existing framing and what he finds compelling.
+Read any provided materials before proceeding to Round 1. This context shapes the entire interview — papers The author has already read reveal his existing framing and what he finds compelling.
 
 **Round 1: Supportive (understand the direction)**
 
@@ -535,7 +535,7 @@ Ask 3-5 questions:
 
 **Round 2: Challenging (stress-test the angle)**
 
-After understanding Robert's direction, push back constructively:
+After understanding The author's direction, push back constructively:
 - Play devil's advocate: "Someone could argue that [counterpoint]. How would you respond?"
 - Suggest alternative framings: "What if the stronger angle is actually [X] rather than [Y]?"
 - Challenge the novelty: "How is this different from what [other communicator] already said?"
@@ -551,15 +551,15 @@ Summarize back:
 - **Key sources**: Papers, data, clinical experience that will anchor the article
 - **Analysis needed?**: Does this article need data analysis, custom figures, or code?
 
-**Voice Calibration**: After Robert confirms the thesis direction, write one test sentence in his voice. Example: "Here's a sentence I'd use for the opening — does this sound like you? [sentence]" Adjust based on feedback before drafting.
+**Voice Calibration**: After The author confirms the thesis direction, write one test sentence in his voice. Example: "Here's a sentence I'd use for the opening — does this sound like you? [sentence]" Adjust based on feedback before drafting.
 
-Get Robert's confirmation, then move to Phase 3.
+Get The author's confirmation, then move to Phase 3.
 
 ---
 
 ### Phase 3: Research & Analysis
 
-**Research** — If the topic needs research beyond what Robert already has:
+**Research** — If the topic needs research beyond what The author already has:
 
 1. **Use PubMed MCP** — Search for recent papers using `mcp__claude_ai_PubMed__search_articles`. Look for:
    - The specific paper(s) being discussed (if a particular paper is the hook)
@@ -570,11 +570,11 @@ Get Robert's confirmation, then move to Phase 3.
    - Recent papers on the topic (last 6 months)
    - Current discourse about this topic
    - News hooks, policy debates, conference presentations
-   - What other science communicators have said (to differentiate Robert's angle)
+   - What other science communicators have said (to differentiate The author's angle)
 
-3. **Check Zotero data** — Look for papers Robert already has that are relevant. Pull specific data points, findings, and DOIs.
+3. **Check Zotero data** — Look for papers The author already has that are relevant. Pull specific data points, findings, and DOIs.
 
-4. **Read context files** if Robert pointed to any in Phase 0.
+4. **Read context files** if The author pointed to any in Phase 0.
 
 **Analysis (if needed):**
 
@@ -594,7 +594,7 @@ Build an outline following the appropriate article template.
 **Outline format:**
 
 ```
-# [Article Title — bold, declarative, in Robert's style]
+# [Article Title — bold, declarative, in The author's style]
 
 **Template**: [which template type]
 **Target length**: [word count range]
@@ -625,7 +625,7 @@ Build an outline following the appropriate article template.
 - **Where it goes**: Which section of the article
 - **Caption suggestion**: What the reader should take away
 
-Present the outline and ask if Robert wants to adjust. If he confirms or doesn't object, proceed to Phase 5.
+Present the outline and ask if The author wants to adjust. If he confirms or doesn't object, proceed to Phase 5.
 
 ---
 
@@ -642,7 +642,7 @@ Write the full article draft following the voice profiles above.
 - Active voice overwhelmingly
 - Alternate short punchy sentences with longer explanatory ones
 - Specific numbers: percentages, effect sizes, NNTs, p-values — always with scale context
-- First-person stakes: "As a Psychiatrist in Seattle..." / "In my clinic..."
+- First-person stakes: "As a [your role] in [your city]..." / "In my lab/clinic..."
 - @ tag researchers, labs, journals, companies
 - $ tickers for public companies when relevant
 - #hashtags only if using roundup template — don't add by default
@@ -661,9 +661,9 @@ Write the full article draft following the voice profiles above.
 - Full article text in markdown
 - `[IMAGE: description]` placeholders where images should go
 - `[SCREENSHOT: Paper Title, Figure X — crop to show Y]` for specific figure instructions
-- Inline links as `[text](URL)` where known, or `[text](FIND: description)` where Robert needs to add the link
+- Inline links as `[text](URL)` where known, or `[text](FIND: description)` where The author needs to add the link
 
-After saving, display the full draft for Robert to read.
+After saving, display the full draft for The author to read.
 
 ---
 
@@ -696,12 +696,12 @@ Save all promotional content to `$CWD/YYMMDD_Topic/drafts/promotional.md`
 
 ### Phase 7: Review & Iterate
 
-After presenting all output, ask Robert:
+After presenting all output, ask the user:
 - "Does the draft capture your voice and angle?"
 - "Any sections that feel off — too cautious, too hyped, missing nuance?"
 - "Want to revise the outline and re-draft, or make targeted edits?"
 
-If Robert wants changes:
+If The author wants changes:
 - For targeted edits: make them directly in the draft file
 - For structural changes: go back to Phase 4 (Outline)
 - For angle changes: go back to Phase 2 (Interview)
@@ -710,7 +710,7 @@ If Robert wants changes:
 
 ### Phase 8: Voice Calibration (`/x-article calibrate`)
 
-Run this after Robert has manually edited a draft. It diffs his version against the last committed version, categorizes every change, and updates the voice calibration file.
+Run this after The author has manually edited a draft. It diffs his version against the last committed version, categorizes every change, and updates the voice calibration file.
 
 **Step 1: Identify the draft and its baseline**
 
@@ -750,7 +750,7 @@ If the calibration file already exists, **append** new entries under a new date 
 
 **Step 4: Check for promotion-ready patterns**
 
-Scan the calibration file for patterns that appear 3+ times across different articles. These are candidates for promotion to SKILL.md rules. Present them to Robert:
+Scan the calibration file for patterns that appear 3+ times across different articles. These are candidates for promotion to SKILL.md rules. Present them to the user:
 
 > "I've noticed you correct [pattern] in 3+ articles. Want me to add this as a permanent rule in the voice profile?"
 
@@ -758,7 +758,7 @@ If confirmed, add the rule to the appropriate section of SKILL.md (voice profile
 
 **Step 5: Report**
 
-Show Robert a summary:
+Show The author a summary:
 - Number of changes categorized
 - Breakdown by category (e.g., "3 voice, 2 structure, 1 tone")
 - Any patterns approaching the 3-instance promotion threshold
@@ -772,8 +772,8 @@ Show Robert a summary:
 
 - **Never fabricate citations.** Only reference papers from Zotero data, context files, or papers verified via PubMed MCP / web search. If unsure, flag as `[VERIFY: description]`.
 - **Never fabricate data points.** If you don't have the exact statistic, say `[DATA: describe what number goes here]`.
-- **Don't over-hedge.** Robert's voice is confident. Use specific caveats ("This study was 88% white") not vague hedging.
-- **Don't be generic.** Every article should feel like only Robert Chen could have written it.
+- **Don't over-hedge.** The author's voice is confident. Use specific caveats ("This study was 88% white") not vague hedging.
+- **Don't be generic.** Every article should feel like only the author could have written it.
 - **Save early, save often.** Write files to the project folder as you go so nothing is lost.
 - **Commit the article** when the draft is finalized: `draft: {Article Title} ($CWD/YYMMDD_Topic/)`
 - **Before drafting, read calibration**: Always read `~/.claude/writing/x-article/voice_calibration.md` (if it exists) before writing any draft. These are accumulated corrections from prior articles.

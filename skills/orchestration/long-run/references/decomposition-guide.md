@@ -355,5 +355,5 @@ After tests are written and passing, before moving to review or evaluation, prod
 **Why the "What's NOT Tested" section is the most valuable part:**
 1. It makes gaps *visible* — the evaluator uses this to find real risks
 2. It rewards honesty — transparency about gaps is a minimal criterion, not a point-farming opportunity
-3. It helps the human (Robert) decide whether gaps are acceptable
+3. It helps the user decide whether gaps are acceptable
 4. It prevents the illusion of complete coverage

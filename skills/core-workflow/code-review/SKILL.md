@@ -289,7 +289,7 @@ Overall: B → was C on 2026-03-10  [improved]
 4. **Don't cry wolf.** If the code is good, say so. A review that finds 30 Informational issues and zero Critical issues is still an A.
 5. **Prioritize silent data corruption.** A crash is annoying. Wrong results in a paper are catastrophic.
 6. **Generate tests for what you find.** The best review leaves behind tests that prevent regression.
-7. **Teach as you go.** Robert is learning Python — explain WHY something is a bug, not just that it is one. Reference the underlying Python/pandas behavior.
+7. **Teach as you go.** the user is learning Python — explain WHY something is a bug, not just that it is one. Reference the underlying Python/pandas behavior.
 
 Follow the AskUserQuestion format (see CLAUDE.md Pi-Stack Conventions) for all interactive questions.
 

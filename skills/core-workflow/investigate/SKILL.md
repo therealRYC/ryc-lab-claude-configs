@@ -248,6 +248,6 @@ This rule exists because: after 3 failed attempts, you're likely operating on a 
 5. **3-strikes rule is a hard stop.** After 3 failed attempts, stop and reassess. This saves hours.
 6. **Minimal fixes only.** Fix the bug, not the neighborhood. Refactoring is a separate task.
 7. **Regression tests are mandatory.** Every fix must leave behind a test. The same bug appearing twice is unacceptable.
-8. **Teach as you go.** Explain the debugging process, not just the fix. Robert is building debugging intuition.
+8. **Teach as you go.** Explain the debugging process, not just the fix. the user is building debugging intuition.
 
 Follow the AskUserQuestion format (see CLAUDE.md Pi-Stack Conventions) for all interactive questions.

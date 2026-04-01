@@ -2,14 +2,14 @@
 
 ---
 name: grant
-description: "Draft NIH and fellowship grant applications in Robert Chen's voice — full workflow from interview through Specific Aims, Research Strategy, and supporting sections. Handles R01, K08, K99/R00, F31/F32, and institutional grants."
+description: "Draft NIH and fellowship grant applications — full workflow from interview through Specific Aims, Research Strategy, and supporting sections. Handles R01, K08, K99/R00, F31/F32, and institutional grants. Customize the voice profile below with your own background."
 user-invocable: true
 argument-hint: "[grant name or mechanism | specific-aims | resume]"
 ---
 
-# Grant Writing — Robert Chen
+# Grant Writing
 
-Draft grant and fellowship applications following NIH conventions in Robert Chen's voice.
+Draft grant and fellowship applications following NIH conventions.
 
 **Arguments**: $ARGUMENTS
 
@@ -21,7 +21,7 @@ Draft grant and fellowship applications following NIH conventions in Robert Chen
 
 ### Identity & Positioning
 
-Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics from WashU. He writes at the intersection of computational psychiatry, functional genomics, drug development, and clinical psychiatry. His identity across all grants: **bench-to-bedside duality** — computational sophistication + clinical grounding.
+[YOUR IDENTITY: Replace with your background, training, and research focus. Example: "A computational biologist at UW with expertise in deep mutational scanning and protein engineering."] Your identity across all grants should highlight your unique positioning and strengths.
 
 ### Universal Rules
 
@@ -39,12 +39,12 @@ Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics 
 
 **Grant mode**: 30% understated enthusiasm / 70% confident precision
 
-Grant writing is Robert's most formal register — closer to manuscript voice but with a persuasive edge. You are making a case for funding, not reporting findings.
+Grant writing is the most formal register — closer to manuscript voice but with a persuasive edge. You are making a case for funding, not reporting findings.
 
 | Core Voice Attribute | X Article Expression | Grant Expression |
 |---------------------|---------------------|-----------------|
 | Rigorous enthusiasm | "Mind-blowing" / "Absolutely wild" | "This approach will reveal..." / "Our preliminary data demonstrate..." |
-| First-person stakes | "As a Psychiatrist in Seattle..." | "As a physician-scientist, I bridge clinical observation with molecular inquiry..." |
+| First-person stakes | "As a [your role] in [your city]..." | "As a [your role], I bridge [domain A] with [domain B]..." |
 | Intellectual humility | "And... I was wrong." | "Should [alternative outcome], we will [contingency plan]..." |
 | The Big BUT | "BUT -- and it's a big BUT" | "However, a critical barrier to progress is..." |
 | Cross-domain linking | Explicit bridge paragraphs | Integrated in Significance (why now) and Innovation (what's novel) |
@@ -117,22 +117,22 @@ Formal but accessible — write as if explaining your work to a smart colleague 
 | **Key move** | "I am uniquely positioned because..." | "My mentored phase equips me to launch..." | "Bridging X with new skills in Y enables..." | "We are positioned to answer this because..." |
 | **Biggest pitfall** | Not distinguishing from mentor | Not showing independence trajectory | Not articulating skill gaps | Overly ambitious scope |
 
-### Robert-Specific Grant Patterns
+### Author-Specific Grant Patterns
 
 **Identity Statement** (use across applications):
-> "I graduated from the MD-PhD program at Washington University in St. Louis with a PhD in Computational and Systems Biology. I gained extensive experience working with large-scale clinical and molecular datasets and developed novel statistical algorithms for biomarker identification."
+> [YOUR IDENTITY STATEMENT: Replace with a 2-3 sentence summary of your training and expertise. Example: "I graduated from [program] at [institution] with a PhD in [field]. I gained extensive experience in [methods/domains] and developed [key contributions]."]
 
-This always conveys: bench-to-bedside duality, computational sophistication, clinical grounding.
+This should convey your unique positioning and expertise.
 
-**Clinical Analogy as Hook** (Robert's signature opener):
+**Clinical Analogy as Hook** (a signature opener):
 > "While cardiologists have blood tests to help diagnose heart attacks and oncologists have PET scans to find hidden cancers, psychiatrists don't have objective tests that solidify a diagnosis of schizophrenia."
 
 This "other fields have X, psychiatry doesn't" pattern is effective and should be preserved.
 
-**Research Program Narrative**: Microbiome work → systems biology → psychiatry pivot → computational psychiatry → precision psychiatry. Each application positions the proposed work as a natural extension of this arc.
+**Research Program Narrative**: [YOUR ARC: e.g., early training → methodological expertise → current focus → future direction]. Each application positions the proposed work as a natural extension of this arc.
 
 **Team/Synergy Framing**:
-> "The synergy between my skillset in data analytics and Dr. Tsuang's experience with psychiatric genetics will allow me to effectively carry out the specific aims."
+> [YOUR TEAM FRAMING: e.g., "The synergy between my skillset in [your methods] and Dr. [Mentor]'s experience with [their expertise] will allow me to effectively carry out the specific aims."]
 
 ### NIH-Specific Requirements
 
@@ -147,7 +147,7 @@ Factor 3 is now pass/fail — strategic advantage for early-career applicants. E
 
 **Formatting**: 11pt or larger (Arial, Georgia, Helvetica, Palatino Linotype). 0.5 inch margins minimum. Page limits strictly enforced — exceeding = instant rejection.
 
-**NIMH Strategic Alignment** for Robert's work: "variant-to-function mapping," "cell-type-specific mechanisms," "translational pipeline," "precision psychiatry."
+**NIMH Strategic Alignment** for your work: "variant-to-function mapping," "cell-type-specific mechanisms," "translational pipeline," "[your applied domain]."
 
 **Key Evidence**: Pier et al. (2018) PNAS showed inter-rater reliability among 43 reviewers evaluating 25 R01s was essentially zero (ICC = 0). Implications: Clarity and accessibility are paramount. First impressions matter disproportionately. Submit persistently — volume correlates with success.
 
@@ -318,10 +318,10 @@ to [goals], positioning me to [submit R01 / launch independent program]
 by [year]."
 ```
 
-**Robert's Candidate Voice Arc:**
+**Candidate Voice Arc:**
 1. **Clinical spark** → "I have been fascinated by the brain since..." / "When I started in medical school..."
-2. **Training trajectory** → MD-PhD → microbiome → systems biology → psychiatry pivot
-3. **Accomplishments** → NEJM, Science, Nature publications; ACNP talk; Forbes 30 under 30
+2. **Training trajectory** → [your training path milestones]
+3. **Accomplishments** → [your key publications, talks, awards]
 4. **Unique positioning** → bench-to-bedside duality; computational + clinical
 5. **Gap** → specific skills needed for independence
 6. **Vision** → "My broader research vision is to addend our symptom-based classification of psychiatry with molecular features"
@@ -397,10 +397,10 @@ coursework in [X] and mentored analysis projects in [Y]").]
 
 ### Phase 2: RFA/FOA Analysis
 
-**If Robert provides an RFA/FOA:**
+**If the user provides an RFA/FOA:**
 1. Fetch the RFA using WebFetch if a URL is provided
 2. Extract: eligible mechanisms, page limits, review criteria, special emphasis areas, budget caps, LOI requirements
-3. Identify alignment between Robert's research and RFA priorities
+3. Identify alignment between your research and RFA priorities
 4. Flag any misalignment
 
 **If no specific RFA:**
@@ -415,12 +415,12 @@ coursework in [X] and mentored analysis projects in [Y]").]
 The Specific Aims page is the single most important page of any application.
 
 Draft following Template 1 above:
-1. **Opening paragraph**: Problem → Gap → Hook → Fill — Lead with clinical urgency. Use the clinical analogy pattern: "While cardiologists have X, psychiatrists lack Y"
+1. **Opening paragraph**: Problem → Gap → Hook → Fill — Lead with urgency. Use the analogy pattern: "While [field A] has X, [field B] lacks Y"
 2. **What We Will Do paragraph**: Long-term goal → Objective → Hypothesis → Rationale
 3. **The Aims**: 2-3 independently completable aims. Use parallel grammatical structure. Aims must NOT depend on each other.
 4. **Payoff paragraph**: Expected outcomes → Field advancement → Translational impact
 
-Apply quality checklist above. Present to Robert for approval before proceeding.
+Apply quality checklist above. Present to the user for approval before proceeding.
 
 ### Phase 4: Research Strategy
 
@@ -451,12 +451,12 @@ Apply quality checklist above. Present to Robert for approval before proceeding.
 ### Phase 5: Supporting Sections
 
 **For K/F mechanisms:**
-1. **Candidate Statement** — Follow Template 5. Use Robert's established arc from exemplars above.
+1. **Candidate Statement** — Follow Template 5. Use the established arc from exemplars above.
 2. **Training Plan** — Follow Template 6. Specific, measurable goals with named courses, workshops, conferences.
 
 **For all mechanisms:**
 - **Data Management and Sharing Plan** (required since January 2023)
-- **Biosketches** — remind Robert to update for all key personnel
+- **Biosketches** — remind the user to update for all key personnel
 
 **Save:**
 - `$CWD/YYMMDD_Name/candidate.md`
@@ -464,7 +464,7 @@ Apply quality checklist above. Present to Robert for approval before proceeding.
 
 ### Phase 6: Review & Iterate
 
-Ask Robert:
+Ask the user:
 - "Does the Specific Aims page hook you in the first sentence?"
 - "Is the central hypothesis clear and testable?"
 - "Are the aims truly independent?"

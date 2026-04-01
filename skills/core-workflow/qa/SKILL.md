@@ -317,7 +317,7 @@ Save report to `.qa/qa-report-{YYYY-MM-DD}.md`.
 4. **Re-verify after every fix.** Run ALL tests after each fix, not just the one that failed. Fixes can cascade.
 5. **Report-only mode exists for a reason.** When the user just wants a health check without modifications, respect `--report-only`.
 6. **Tests are a deliverable.** The tests you generate during QA stay in the codebase. They're as valuable as the fixes.
-7. **Teach as you go.** When you find a bug, explain WHY it's a bug and what Python/pandas behavior caused it. Robert is learning.
+7. **Teach as you go.** When you find a bug, explain WHY it's a bug and what Python/pandas behavior caused it. the user is learning.
 8. **Be honest about the health score.** Don't inflate. A C is fine for exploratory code. An F means real problems.
 
 Follow the AskUserQuestion format (see CLAUDE.md Pi-Stack Conventions) for all interactive questions.

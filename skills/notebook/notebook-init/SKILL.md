@@ -31,7 +31,7 @@ Write the file with this structure:
 <!-- Created: YYYY-MM-DD -->
 <!-- Last updated: YYYY-MM-DD — Project initialization -->
 
-**PI**: Robert Chen, Fowler Lab, University of Washington
+**PI**: [Your Name], [Lab Name], [Institution]
 **Started**: YYYY-MM-DD
 **Repository**: {git remote URL or "local"}
 
@@ -72,7 +72,7 @@ Write the file with this structure:
 
 ## Conventions
 
-- Follow Robert's file timestamp rules (Created + Last updated at top)
+- Follow the file timestamp rules (Created + Last updated at top)
 - Use the project's actual context from the conversation — don't leave everything as placeholders
 - Keep the Project Context and Key Questions sections concise
 - The Decision Log table starts empty — it accumulates as /notebook entries add decisions

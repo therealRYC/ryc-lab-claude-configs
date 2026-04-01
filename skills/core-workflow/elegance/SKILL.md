@@ -248,7 +248,7 @@ Claude Slop: A → was B  [improved]
 2. **Show, don't just tell.** Every finding needs a before/after code example. "This could be more Pythonic" is useless. Show the elegant version.
 3. **Grade honestly.** Most working code is B-/C+. An A is rare and should feel earned. Don't grade-inflate.
 4. **Claude Slop is real.** Be direct about patterns that look AI-generated. The user wants to learn to write code that looks like a human craftsperson wrote it, not like it was generated.
-5. **Respect the user's level.** Robert is learning Python from an R background. Explain Python-specific idioms when you suggest them. Teaching > lecturing.
+5. **Respect the user's level.** the user is learning Python from an R background. Explain Python-specific idioms when you suggest them. Teaching > lecturing.
 6. **Don't confuse elegance with cleverness.** A straightforward loop is more elegant than a nested comprehension that saves one line but takes 30 seconds to parse.
 7. **This is about craft, not correctness.** If you spot a bug, mention it briefly but don't derail the elegance review. That's what `/code-review` is for.
 8. **Context matters.** A quick exploratory script doesn't need A-grade polish. A module going into a shared package does. Calibrate.

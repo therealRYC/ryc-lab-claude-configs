@@ -36,9 +36,9 @@ Parse `$ARGUMENTS` to determine the commit range to review.
 
 | Argument | Behavior | Git command for log |
 |----------|----------|---------------------|
-| *(empty)* | Session commits: last 4 hours by Robert | `git log --since="4 hours ago" --author="Robert" --oneline` |
+| *(empty)* | Session commits: last 4 hours by current user | `git log --since="4 hours ago" --author="$(git config user.name)" --oneline` |
 | `--branch` | All commits since diverging from main/master | `git log main..HEAD --oneline` (detect default branch) |
-| `--since=<time>` | Commits since the given time | `git log --since="<time>" --author="Robert" --oneline` |
+| `--since=<time>` | Commits since the given time | `git log --since="<time>" --author="$(git config user.name)" --oneline` |
 | A commit SHA | All commits from that SHA to HEAD | `git log <sha>..HEAD --oneline` |
 | A branch name | All commits on that branch since main | `git log main..<branch> --oneline` |
 
@@ -62,7 +62,7 @@ Once the commit range is determined:
    ```
    For the session default (no range), use:
    ```bash
-   git diff $(git log --since="4 hours ago" --author="Robert" --format="%H" | tail -1)^..HEAD
+   git diff $(git log --since="4 hours ago" --author="$(git config user.name)" --format="%H" | tail -1)^..HEAD
    ```
 
 3. **File list with stats**:

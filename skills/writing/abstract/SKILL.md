@@ -2,12 +2,12 @@
 
 ---
 name: abstract
-description: "Draft conference abstracts and talk scripts in Robert Chen's voice. Supports poster abstracts (ACNP, APA), poster audio scripts, data blitz talks (5 min), and platform talks (10-15 min)."
+description: "Draft conference abstracts and talk scripts. Supports poster abstracts, poster audio scripts, data blitz talks (5 min), and platform talks (10-15 min). Customize the voice profile below with your own background."
 user-invocable: true
 argument-hint: "[conference/topic | resume]"
 ---
 
-# Abstract & Talk Writing — Robert Chen
+# Abstract & Talk Writing
 
 Draft conference abstracts and talk scripts following evidence-based presentation principles.
 
@@ -21,7 +21,7 @@ Draft conference abstracts and talk scripts following evidence-based presentatio
 
 ### Identity
 
-Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics. His brand: **rigorous enthusiasm** — excited about the science, honest about the limitations.
+[YOUR IDENTITY: Replace with your background and research focus. Example: "A computational biologist at UW studying protein fitness landscapes."] Brand: **rigorous enthusiasm** — excited about the science, honest about the limitations.
 
 ### Universal Rules
 
@@ -43,7 +43,7 @@ Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics.
 | **Voice** | Formal, academic, compressed | Conversational, personal, narrative |
 | **Goal** | Convince review committee | Connect with live audience |
 | **Structure** | Background/Methods/Results/Conclusion | Story arc with tension and payoff |
-| **"I" usage** | Rare — "we" predominates | Frequent — "Hi, I'm Rob..." |
+| **"I" usage** | Rare — "we" predominates | Frequent — "Hi, I'm [Name]..." |
 | **Jargon** | Defined briefly in-line | Translated in real-time with analogies |
 
 **Abstract mode**: 20% enthusiasm / 80% disciplined precision (closer to manuscript voice)
@@ -74,7 +74,7 @@ Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics.
 - [ ] Meets conference-specific formatting requirements exactly
 - [ ] Readable by someone outside the specific subfield
 
-**Robert's Abstract Patterns to Preserve:**
+**Abstract Patterns to Preserve:**
 - Leading with the clinical problem, not the method
 - Including specific numbers (ROC, p-values, N)
 - Closing with concrete future applications, not vague "more research is needed"
@@ -83,7 +83,7 @@ Robert is a Psychiatry resident (PGY-3 at UW) with a PhD in functional genomics.
 ### Talk Voice Patterns
 
 **Opening Formula** (brand signature):
-> "Hi, I'm Rob, I'm a [year] psychiatry resident at the University of Washington, and I'd like to share with you [a story / my efforts to / two stories] focused on [topic]."
+> "Hi, I'm [Name], I'm a [year/role] at [Institution], and I'd like to share with you [a story / my efforts to / two stories] focused on [topic]."
 
 This is a brand signature — casual, personal, frames research as narrative.
 
@@ -201,7 +201,7 @@ Key: Audiences retain only **1-2 takeaways** from a talk. Explicitly tell them w
 
 ```
 SLIDE 1: Personal intro + problem statement
-"Hi, I'm Rob... I'd like to share a story about [topic]"
+"Hi, I'm [Name]... I'd like to share a story about [topic]"
 [State the clinical problem and why current approaches fall short]
 
 SLIDE 2: Study design (ONE sentence) + key visual
@@ -260,7 +260,7 @@ SLIDE 13: Acknowledgments
 
 ```
 [INTRO — 15 seconds]
-"Thanks for stopping by my poster. I'm Rob..."
+"Thanks for stopping by my poster. I'm [Name]..."
 "I'm excited to tell you about [topic]"
 
 [BACKGROUND — 30 seconds]
@@ -346,7 +346,7 @@ Follow the appropriate template:
 Write the script with slide transition markers ("Advance" or "Break").
 
 **For Poster Audio Scripts:**
-Follow the Poster Audio Script template above. Open with "Thanks for stopping by my poster. I'm Rob..."
+Follow the Poster Audio Script template above. Open with "Thanks for stopping by my poster. I'm [Name]..."
 
 **Save:**
 - `$CWD/YYMMDD_Name/abstract.md`
@@ -360,8 +360,8 @@ Provide a slide-by-slide plan:
 ```
 ## Slide 1: Title + Personal Intro
 - Content: Title, name, affiliation
-- Script: "Hi, I'm Rob..."
-- Visual: Clean title slide with UW logo
+- Script: "Hi, I'm [Name]..."
+- Visual: Clean title slide with institution logo
 - Timing: ~30 seconds
 
 ## Slide 2: The Problem
@@ -373,7 +373,7 @@ Provide a slide-by-slide plan:
 
 ### Phase 6: Review & Iterate
 
-Ask Robert:
+Ask the user:
 - "Does the abstract capture the key finding clearly?"
 - "Is the talk script at the right level for this audience?"
 - "Any data points that need updating?"
