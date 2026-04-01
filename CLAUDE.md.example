@@ -1,0 +1,212 @@
+# Global CLAUDE.md — [Your Name]
+
+## About Me
+- [Your Name], [Lab Name], [Institution] ([your-email])
+- Primary languages: Python and R
+- [Describe your experience level — e.g., "I am not a Python native — I'm still learning. Explain reasoning and teach me as you go."]
+- GitHub: [your-github-handle]
+
+## Communication Style
+- Default to teaching mode: explain WHY you're making choices, not just what you're doing
+- When introducing a new concept, library, or pattern I haven't used before, give a brief explanation
+- Be concise on routine tasks, but don't skip explanations on anything non-obvious
+- Use code comments and docstrings generously — I learn from reading annotated code
+
+## Commenting & Documentation
+- IMPORTANT: Always add docstrings to functions and classes. Docstrings should explain WHAT the function does, its parameters, and return values.
+- Inline comments should explain WHY, not WHAT — the reasoning behind non-obvious decisions
+- Prefer more comments rather than fewer. I'd rather have too many than too few.
+- Use Google-style docstrings for Python, roxygen2-style for R
+
+## Coding Style — Python
+- Use type hints on function signatures
+- Prefer f-strings over .format() or % formatting
+- Use pathlib over os.path for file operations
+- Prefer list comprehensions over map/filter when readable
+
+## Jupyter Notebook Style — IMPORTANT
+- IMPORTANT: Notebooks should read like a scientific narrative, not just a code dump.
+- Every section gets a **markdown cell before the code** explaining:
+  - **What** we're about to do and **why** it matters
+  - **Design choices** — why this approach over alternatives
+  - **Interpretation** — what to look for in the output
+- After key results (figures, tables), add a markdown cell with interpretation:
+  - What the result tells us, what's expected vs. surprising
+  - How it connects to the next analysis step
+- Use the tone of a methods/results section in a paper — precise but accessible
+- Section headers should frame the scientific question, not just name the operation
+  (e.g., "Does plasmid skew predict guide dropout?" not "Run simulation")
+- Include brief inline comments in code cells for non-obvious operations,
+  but keep the heavy narrative in markdown cells
+
+## Coding Style — R
+- Use tidyverse style and conventions when applicable
+- Prefer pipe operator (|> or %>%) for data transformations
+- Use snake_case for variable and function names
+
+## Workflow — IMPORTANT
+- IMPORTANT: On non-trivial tasks, discuss your approach BEFORE writing code. Plan first.
+- For non-trivial tasks, the plan should include: problem statement, data flow diagram, test matrix, edge cases, dependencies, and checkpoints. For thorough plan reviews, use `/plan-eng-review`.
+- IMPORTANT: Never delete files or remove significant blocks of code without asking me first.
+- After making code changes, always run relevant tests if they exist.
+- When I say "commit and push" or ask for a PR: use `/ship` for the full quality gate, or at minimum check for issues (lint, tests, etc.) and ask me to confirm before pushing.
+
+## Session Workflow
+- **On session start** (git repos only):
+  - Run `git fetch` and compare local branch with upstream
+  - If the remote is ahead, notify me (e.g., "Remote has 3 new commits — you may want to pull")
+  - If there's no remote or no upstream tracking branch, skip silently — don't error or warn
+- **Before exiting plan mode** (IMPORTANT):
+  - Write the current session name to `.claude-session-name` in the project root
+  - This persists the name across "clear context and exit plan mode" so the hook can rename the implementation session to `{name}-code`
+  - If the session has no custom name, write `YYMMDD-<plan-topic>` (e.g., `260317-fitness-pipeline`)
+- **On session end**:
+  - If uncommitted changes exist, remind me and ask whether to push
+  - If substantive work was done in this session, offer to create a notebook entry (invoke the `notebook` skill)
+- These checks are advisory only. Don't block the session if they fail.
+
+## Auto-Incremental Commits — IMPORTANT
+- IMPORTANT: Make incremental commits automatically when a meaningful unit of work is complete (e.g., a function written, a bug fixed, a config updated).
+- Briefly mention each commit as it happens (e.g., "Committed: Add parsing function") so I can track progress.
+- Use descriptive commit messages (imperative mood, per Git section rules).
+- Don't batch unrelated changes into one commit — keep commits atomic and focused.
+- Still ask before **pushing** to remote — commits are local saves, pushes need my approval.
+- Still ask before committing anything that **removes code or files** — deletions need my confirmation.
+
+## Test-as-You-Go — IMPORTANT
+- When writing a function that transforms data, also write at least one test for it before moving on.
+- Tests should use realistic biological data (not `[1, 2, 3]`), and each test docstring should explain what it guards against.
+- After a code-review finding, auto-generate a test that would have caught the issue — regressions are unacceptable.
+- When committing a function, include its test in the same commit or the immediately following one.
+- Use the `bug-tester` agent proactively, not just reactively — run it on new code before committing.
+- For data transformations: test with empty input, single row, NaN values, and one known-good case.
+
+## Deep Research & Brainstorming — IMPORTANT
+- IMPORTANT: **Reference verification is mandatory.** Every cited paper or article must be verified
+  via a tool call (PubMed, bioRxiv, Google Scholar, etc.) and must include a clickable link to the
+  source (PMID URL, DOI URL, or direct URL). If a reference cannot be verified, do not cite it.
+  This applies everywhere — deep-researcher agents, /deep-learn, brainstorm docs, and any other
+  context where scientific references are produced.
+- Deep research sessions are **interactive**: use the `deep-researcher` agent for literature search
+  and evidence synthesis, but combine aggressively with interviewing — ask clarifying questions,
+  explore angles together, challenge assumptions, and iterate on findings.
+- **Brainstorm file**: After a research session, distill the full back-and-forth into a markdown file:
+  - **Location**: `Brainstorm/YYYY-MM-DD_topic.md` in the project root
+  - Create the `Brainstorm/` directory if it doesn't exist
+  - **Contents** — a structured write-up (not a raw transcript), covering:
+    - **Research question**: What we set out to answer
+    - **Key findings**: Distilled results from literature search and discussion
+    - **Points of confusion**: Areas where evidence was unclear, conflicting, or incomplete
+    - **Answers & decisions**: What we resolved and why
+    - **Open questions**: What remains unanswered for future sessions
+  - Auto-commit with message format: `brainstorm: {Topic} (Brainstorm/YYYY-MM-DD_topic.md)`
+- `/analyze-literature` remains available for single-paper analysis — brainstorm sessions are for
+  broader research questions that benefit from back-and-forth exploration.
+
+## Lab Notebook — IMPORTANT
+- Each project has a `NOTEBOOK.md` in the project root — the single-file lab notebook.
+- **Auto-trigger notebook entries** in these situations (invoke the `notebook` skill):
+  - **Research completion**: After a brainstorm session, create a **brief** notebook entry that
+    summarizes the key decisions and links to the full brainstorm file. Keep it concise — the
+    notebook captures *what was decided*, the brainstorm file captures *how we got there*.
+    Format: "Discussed X — decided Y. See [detailed thinking](Brainstorm/YYYY-MM-DD_topic.md)."
+  - **Session end**: When a session involved substantive work, offer a notebook entry before closing. Don't skip this.
+- The user can also say "add to notebook", "capture this", "document this", or invoke `/notebook` directly.
+- Notebook entries are auto-committed with message format: `notebook: {Topic} (NOTEBOOK.md)`
+- If no `NOTEBOOK.md` exists when a notebook entry is needed, initialize it first with `notebook-init`.
+- For retrospectives/post-mortems, use `/notebook completion:` — captures what worked, what failed, bugs & fixes, lessons learned, and plan vs. reality (if a plan existed).
+
+## Project Initialization
+- When starting a new project, propose a directory structure before writing any code.
+- Tailor the structure to the project type. Common patterns:
+  - **Python package**: `src/`, `tests/`, `docs/`, `data/`, `notebooks/`, `scripts/`
+  - **R analysis**: `R/`, `data/`, `output/`, `figures/`, `scripts/`
+  - **Data pipeline**: `src/`, `data/raw/`, `data/processed/`, `configs/`, `logs/`
+- Always include: `.gitignore`, `README.md`, `Plans/`, `NOTEBOOK.md` (per Lab Notebook rules)
+- For existing projects, if files are growing disorganized or a new feature introduces a new concern, recommend reorganization with reasoning.
+- Directory suggestions are recommendations — always confirm with me before restructuring.
+
+## Parallel Task Execution
+- When a plan has 3+ independent subtasks, use the `modular-worker` agent
+  (defined in `~/.claude/agents/modular-worker.md`) to work on them in parallel.
+- During planning, always produce a dependency graph (Mermaid or ASCII).
+  Use it to identify which tasks can run concurrently vs. which must be sequential.
+- Spin up independent tasks as separate `modular-worker` subagents — each runs in
+  its own worktree automatically.
+- Tasks with upstream dependencies run sequentially after their blockers complete.
+- After all subagents finish, review the resulting branches and merge them into
+  the working branch. Flag any merge conflicts for my review.
+- This applies to subagent-level worktrees for parallel coding, which is separate
+  from the project-level worktree default in the Git section (that's for keeping
+  main clean during feature work).
+
+## Documentation-on-Ship — IMPORTANT
+- At the end of any task that changes code behavior, run a quick documentation freshness check:
+  - Do docstrings on changed functions still match their signatures and behavior?
+  - Does the README still accurately describe the project? If no README exists, suggest creating one.
+  - If substantive work was done, does NOTEBOOK.md have an entry?
+- For formal checks before shipping, use `/doc-check` or include it in the `/ship` workflow.
+- Never update documentation silently — always confirm changes with me first.
+- Stale documentation is worse than missing documentation. When in doubt, flag it.
+
+## Git
+- Commit messages: imperative mood, concise summary line, body if needed for context
+- I use GitHub CLI (gh) authenticated via HTTPS
+- **Worktree default**: When starting a new project or feature branch, default to using a git worktree so the main branch stays clean. Suggest worktree setup as part of project initialization.
+
+## PR Descriptions
+- PR descriptions should be detailed and comprehensive, not just bullet points
+- Include: **motivation** (why this change exists), **approach** (what was done and key design decisions), and **testing** (how it was verified)
+- Use the full conversation context to write rich summaries — capture the reasoning and tradeoffs discussed, not just the final diff
+- Still keep PR titles short (under 70 characters) — put the detail in the body
+
+## Environment
+- [Your OS/environment — e.g., "Running on WSL2 (Ubuntu on Windows)" or "macOS Sonoma"]
+- Git identity: [Your Name] <[your-email]>
+
+## Pi-Stack Conventions
+
+### AskUserQuestion Format
+All pi-stack skills follow this format when asking interactive questions:
+
+1. **Re-ground** (1-2 sentences): Remind the user of the project, branch, and current task
+2. **Simplify**: Explain as if the user hasn't looked at this in 20 minutes
+3. **Recommend**: `RECOMMENDATION: Choose [X] because [reason]`
+4. **Options**: Lettered A) B) C), 2-4 options max
+
+### Completion Status Protocol
+Every pi-stack skill ends with one of these status signals:
+
+| Status | Meaning |
+|--------|---------|
+| **DONE** | All steps completed successfully |
+| **DONE_WITH_CONCERNS** | Completed, but issues were flagged for attention |
+| **BLOCKED** | Cannot proceed — missing dependency or unresolvable error |
+| **NEEDS_CONTEXT** | Missing information required from user |
+
+**Escalation rule**: After 3 failed attempts at the same step, STOP. Report what was tried, what failed, and why. Do not keep retrying.
+
+### Skill Lifecycle Map
+Match the activity to the right skill:
+
+| Activity | Skill |
+|----------|-------|
+| Starting from scratch | `/office-hours` |
+| Forming research question | `/pi-review` |
+| Planning implementation | `/plan-eng-review` |
+| Debugging errors | `/investigate` |
+| Reviewing code | `/code-review` |
+| Testing systematically | `/qa` |
+| Code quality audit | `/elegance` |
+| Reviewing visuals | `/visual-review` |
+| Checking docs | `/doc-check` |
+| Ready to push | `/ship` |
+| Weekly reflection | `/retro` |
+| Full pipeline | `/pi-stack` |
+| Check safety rules | `/careful` |
+| Restrict edits to one directory | `/freeze` / `/unfreeze` |
+| Maximum safety mode | `/guard` |
+
+## Growing This File
+- When Claude makes a repeated mistake, I'll add a rule here to prevent it.
+- Claude: if I correct you on something that seems like a recurring pattern, suggest adding it to this file.
